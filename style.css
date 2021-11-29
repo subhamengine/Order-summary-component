@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root{
+    --Desaturatedblue:hsl(224, 23%, 55%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+    --Paleblue: hsl(225, 100%, 94%);
+}
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+h2{
+    font-size: 28px;
+}
+.desc{
+    padding-top: 12px;
+    font-size: 15px;
+    color: var(--Desaturatedblue);
+}
+.money{
+    font-size: 15px;
+    color: var(--Desaturatedblue);
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-color:var(--Paleblue)
+}
+.ann{
+    font-size: 16px;
+}
+.big-img{
+    display: flex;
+    justify-content:center;
+    background-image: url('images/pattern-background-desktop.svg');
+    width: auto;
+    height: 437px;
+}
+
+.flex-box{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 400px;
+    height: 550px;
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+}
+.small-img{
+    height: 35%;
+    width: 100%;
+}
+.danceImg{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+.rest{
+    height: 65%;
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    background-color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.text{
+    width: 80%;
+    margin: 0 0 0 40px;
+}
+.annual{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 20px 0 0 40px;
+    border-radius: 7px;
+    padding: 15px;
+    background-color: var(--Verypaleblue);
+}
+.annualicon{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.imgmusic{
+    padding-right: 10px;
+}
+.change{
+    padding-top: 9px;
+    padding-right: 5px;
+}
+.pay{
+    width: 80%;
+    margin: 30px 0 0 40px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--Brightblue);
+    color: white;
+    font-size: 15px;
+    box-shadow: 3px 3px 15px var(--Desaturatedblue);
+    cursor: pointer;
+}
+.cancel{
+    font-size: 15px;
+    margin-top: 23px;
+    color: var(--Darkblue);
+    cursor: pointer;
+}
+.attribution{
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media (max-width:400px){
+    .flex-box{
+        width: 300px;
+        height: 550px;
+    }
+    .small-img{
+        height: 170px;
+    }
+    .ann{
+        font-size: 14px;
+    }
+    .desc,.money{
+        font-size: 14px;
+    }
+}
